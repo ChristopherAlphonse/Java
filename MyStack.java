@@ -1,9 +1,9 @@
-import java.util.Stack;
+import java.util.*;
 
 public class MyStack {
 
   public static void main(String[] args) {
-    Stack<String> stack = new Stack<String>();
+    Stack<String> stack = new Stack<>();
 
     stack.push("dog");
     stack.push("cat");
@@ -18,10 +18,10 @@ public class MyStack {
   }
 }
 
-// Stack = LIFO DSA- Last-in First-out
+// Stack: A Last-In-First-Out (LIFO) Data Structure
 
-// uses:
-// 1. undo/redo feature
-// 2. go forward or backward with the browser button
-// 3. backtracking like file directory or maze
-// 4. calling functions(call stack)
+// Common uses:
+// 1. Undo/redo feature
+// 2. Navigating forward or backward with browser buttons
+// 3. Backtracking, such as in file directory or maze exploration
+// 4. Executing and managing function calls (call stack)
