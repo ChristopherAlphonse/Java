@@ -16,4 +16,3 @@ This documentation covers the study of Data Structures and Algorithms using reso
 
 - Traditional educational institutions provide a foundation for learning Java, data structures, and algorithms.
 
-Feel free to customize and expand this Markdown file as needed!
