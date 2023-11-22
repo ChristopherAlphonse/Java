@@ -3,7 +3,7 @@ package Algorithm;
 public class bitMapping{
 
     int mask = 0x0f;
-    int value = 0x55;
+      int value = 0x55;
 
 
     public int performBitMapping(){
