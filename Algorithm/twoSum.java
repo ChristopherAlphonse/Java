@@ -17,7 +17,7 @@ public class twoSum {
         }
 
         // If no solution is found
-        return new int[]{-1, -1};
+        return new int[]{-1, -1}; 
     }
 
     public static void main(String[] args) {

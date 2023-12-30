@@ -1,6 +1,6 @@
 package Algorithm;
 
-public class BinaryGap {
+public class binaryGap {
 
     public int solution(int N) {
         String binaryString = Integer.toBinaryString(N);
@@ -31,7 +31,7 @@ public class BinaryGap {
     }
 
     public static void main(String[] args) {
-        BinaryGap bg = new BinaryGap();
+        binaryGap bg = new binaryGap();
         int result = bg.solution(9);
         System.out.println(result);
     }

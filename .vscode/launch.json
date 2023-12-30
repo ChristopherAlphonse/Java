@@ -1,46 +1,67 @@
 {
-	"version": "0.2.0",
-	"configurations": [
-		{
-			"type": "java",
-			"name": "BinaryGap",
-			"request": "launch",
-			"mainClass": "Algorithm.BinaryGap",
-			"projectName": "Java_cac0832c"
-		},
-		{
-			"type": "java",
-			"name": "bitMapping",
-			"request": "launch",
-			"mainClass": "Algorithm.bitMapping",
-			"projectName": "Java_cac0832c"
-		},
-		{
-			"type": "java",
-			"name": "binaryGap",
-			"request": "launch",
-			"mainClass": "Algorithm.binaryGap",
-			"projectName": "Java_cac0832c"
-		},
-		{
-			"type": "java",
-			"name": "Current File",
-			"request": "launch",
-			"mainClass": "${file}"
-		},
-		{
-			"type": "java",
-			"name": "Run Class",
-			"request": "launch",
-			"mainClass": "${input:mainClass}",
-			"projectName": "Java_cac0832c"
-		}
-	],
-	"inputs": [
-		{
-			"id": "mainClass",
-			"type": "promptString",
-			"description": "Enter the main class to run"
-		}
-	]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "TemperatureConverter",
+      "request": "launch",
+      "mainClass": "Foundation.TemperatureConverter",
+      "projectName": "Java_1b5410a4"
+    },
+    {
+      "type": "java",
+      "name": "Basic",
+      "request": "launch",
+      "mainClass": "Foundation.Basic",
+      "projectName": "Java_1b5410a4"
+    },
+    {
+      "type": "java",
+      "name": "basic",
+      "request": "launch",
+      "mainClass": "Foundation.basic",
+      "projectName": "Java_1b5410a4"
+    },
+    {
+      "type": "java",
+      "name": "BinaryGap",
+      "request": "launch",
+      "mainClass": "Algorithm.BinaryGap",
+      "projectName": "Java_cac0832c"
+    },
+    {
+      "type": "java",
+      "name": "bitMapping",
+      "request": "launch",
+      "mainClass": "Algorithm.bitMapping",
+      "projectName": "Java_cac0832c"
+    },
+    {
+      "type": "java",
+      "name": "binaryGap",
+      "request": "launch",
+      "mainClass": "Algorithm.binaryGap",
+      "projectName": "Java_cac0832c"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Run Class",
+      "request": "launch",
+      "mainClass": "${input:mainClass}",
+      "projectName": "Java_cac0832c"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "mainClass",
+      "type": "promptString",
+      "description": "Enter the main class to run"
+    }
+  ]
 }

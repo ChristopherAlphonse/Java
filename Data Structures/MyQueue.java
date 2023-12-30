@@ -17,7 +17,7 @@ public class MyQueue {
 // Insert operations: add(e), offer(e), enqueue
 // Remove operations: remove(), poll(), dequeue
 // Examine operations: element(), peek()
-
+ 
 // Common uses:
 // 1. Keyboard buffer
 // 2. Printer queue
