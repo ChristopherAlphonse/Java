@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CountNums",
+      "request": "launch",
+      "mainClass": "Foundation.CountNums",
+      "projectName": "Java_1b5410a4"
+    },
+    {
+      "type": "java",
       "name": "TemperatureConverter",
       "request": "launch",
       "mainClass": "Foundation.TemperatureConverter",

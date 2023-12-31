@@ -1,6 +1,5 @@
 package Foundation;
 
-
 import java.util.Scanner;
 
 public class FindLargest {

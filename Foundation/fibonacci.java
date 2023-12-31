@@ -1,25 +1,17 @@
 package Foundation;
 
-
-
-
-
-
-
-
 /*
-
-
-first discovered in India, then Rome (phi), then popularized by Leonardo Pisano Bigollo
-
-Fibonacci Sequence: 0, 1, 1, 32, 3, 5, 8, 13, 21, 34
-
+ * 
+ * 
+ * first discovered in India, then Rome (phi), then popularized by Leonardo Pisano Bigollo
+ * 
+ * Fibonacci Sequence: 0, 1, 1, 32, 3, 5, 8, 13, 21, 34
+ * 
  */
-
 
 import java.util.Scanner;
 
-public class fibonacci {
+public class Fibonacci {
 
     public static void main(String[] args) {
         Scanner userIn = new Scanner(System.in);
@@ -27,11 +19,9 @@ public class fibonacci {
 
         int n = userIn.nextInt();
 
-
         int previous = 0;
         int current = 1;
         int count = 2;
-
 
         while (count <= n) {
             int temp = current;

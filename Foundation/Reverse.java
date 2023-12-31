@@ -2,7 +2,6 @@ package Foundation;
 
 public class Reverse {
 
-
     public static void main(String[] args) {
         int n = 123;
         int answer = 0;
@@ -14,7 +13,6 @@ public class Reverse {
 
         System.out.println(answer);
     }
-
 
 }
 

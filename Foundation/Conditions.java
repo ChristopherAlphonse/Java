@@ -2,7 +2,6 @@ package Foundation;
 
 public class Conditions {
 
-
     public static void main(String[] args) {
         int salary = 25400;
         if (salary > 10000) {

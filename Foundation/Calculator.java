@@ -41,6 +41,9 @@ public class Calculator {
             } else {
                 System.out.println("Invalid Try again.");
             }
+
         }
+        userIn.close();
+
     }
 }
