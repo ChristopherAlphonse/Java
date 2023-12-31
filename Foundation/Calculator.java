@@ -35,7 +35,9 @@ public class Calculator {
             int b = userIn.nextInt();
 
             int answer = calculate(op, a, b);
-            logger.info("Result: " + answer);
+            logger.info(() -> "Result: " + answer);
+
+
         } else {
             logger.warning("Invalid operator. Try again.");
         }
@@ -57,7 +59,7 @@ public class Calculator {
     }
 
     private static int handleDivisionByZero() {
-        logger.info("Cannot divide by zero.");
+        logger.warning("Cannot divide by zero.");
         return 0;
     }
 }
