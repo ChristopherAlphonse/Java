@@ -1,9 +1,16 @@
 package Algorithm;
 
-public class binaryGap {
 
-    public int solution(int N) {
-        String binaryString = Integer.toBinaryString(N);
+public class BinaryGap {
+
+    public static void main(String[] args) {
+        BinaryGap bg = new BinaryGap();
+        int result = bg.solution(9);
+        System.out.println(result);
+    }
+
+    public int solution(int n) {
+        String binaryString = Integer.toBinaryString(n);
 
         boolean started = false;
 
@@ -14,25 +21,20 @@ public class binaryGap {
             char c = binaryString.charAt(i);
 
             if (c == '1') {
-                if (started) {
-                    if (counter > maxCount) {
-                        maxCount = counter;
-                    }
+                if (started && (counter > maxCount)) {
+                    maxCount = counter;
+
                 }
 
                 counter = 0;
                 started = true;
             } else if (c == '0') {
                 counter++;
+
             }
         }
 
         return maxCount;
-    }
 
-    public static void main(String[] args) {
-        binaryGap bg = new binaryGap();
-        int result = bg.solution(9);
-        System.out.println(result);
     }
 }
