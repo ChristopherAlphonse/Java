@@ -1,13 +1,15 @@
-import java.util.*;
+package com.datastructures;
+
+import java.util.LinkedList;
 
 public class MyQueue {
-  public static void main(String[] args) {
-    Queue<String> queue = new LinkedList<>();
-    queue.offer("steve");
-    queue.offer("daman");
-    queue.offer("julius");
-    System.out.println(((LinkedList<String>) queue).indexOf("daman"));
-  }
+    public static void main(String[] args) {
+        LinkedList<String> queue = new LinkedList<>();
+        queue.offer("steve");
+        queue.offer("josh");
+        queue.offer("julius");
+        System.out.println(queue.indexOf("daman"));
+    }
 }
 
 // Queue: A First-In-First-Out (FIFO) Data Structure
@@ -17,7 +19,7 @@ public class MyQueue {
 // Insert operations: add(e), offer(e), enqueue
 // Remove operations: remove(), poll(), dequeue
 // Examine operations: element(), peek()
- 
+
 // Common uses:
 // 1. Keyboard buffer
 // 2. Printer queue

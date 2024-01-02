@@ -1,5 +1,4 @@
-package Algorithm;
-
+package com.algorithm;
 
 public class BinaryGap {
 

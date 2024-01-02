@@ -1,4 +1,4 @@
-package Foundation;
+package com.foundation;
 
 public class Conditions {
 

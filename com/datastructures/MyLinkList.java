@@ -1,23 +1,25 @@
-import java.util.*;
+package com.datastructures;
+
+import java.util.LinkedList;
 
 public class MyLinkList {
-  public static void main(String[] args) {
-    LinkedList<String> linkedList = new LinkedList<>();
+    public static void main(String[] args) {
+        LinkedList<String> linkedList = new LinkedList<>();
 
-    linkedList.offer("hello");
-    linkedList.offer("hell");
-    linkedList.offer("he");
-    linkedList.add(0, "random");
-    linkedList.offer("hel");
+        linkedList.offer("hello");
+        linkedList.offer("hell");
+        linkedList.offer("he");
+        linkedList.addFirst("random");
+        linkedList.offer("hel");
 
-    linkedList.addFirst("firstPlace");
-    linkedList.addLast("lastPlace");
+        linkedList.addFirst("firstPlace");
+        linkedList.addLast("lastPlace");
 
-    System.out.println(linkedList.peekFirst());
-    System.out.println(linkedList.peekLast());
-    System.out.println(linkedList);
+        System.out.println(linkedList.peekFirst());
+        System.out.println(linkedList.peekLast());
+        System.out.println(linkedList);
 
-  }
+    }
 
 }
 

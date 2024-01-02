@@ -1,12 +1,12 @@
-package Foundation;
+package com.foundation;
 
 /*
- * 
- * 
+ *
+ *
  * first discovered in India, then Rome (phi), then popularized by Leonardo Pisano Bigollo
- * 
+ *
  * Fibonacci Sequence: 0, 1, 1, 32, 3, 5, 8, 13, 21, 34
- * 
+ *
  */
 
 import java.util.Scanner;

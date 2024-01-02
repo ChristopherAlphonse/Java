@@ -1,24 +1,26 @@
-import java.util.*;
+package com.datastructures;
+
+import java.util.ArrayList;
 
 public class MyArrayList {
 
-  public static void main(String[] args) {
-    ArrayList<String> arrayList = new ArrayList<>();
+    public static void main(String[] args) {
+        ArrayList<String> arrayList = new ArrayList<>();
 
-    arrayList.add("hello");
-    arrayList.add("hell");
-    arrayList.add("hel");
-    arrayList.add("he");
-    arrayList.add("h");
-    arrayList.add("w");
-    arrayList.add("wo");
-    arrayList.add("wor");
-    arrayList.add("worl");
-    arrayList.add("world");
+        arrayList.add("hello");
+        arrayList.add("hell");
+        arrayList.add("hel");
+        arrayList.add("he");
+        arrayList.add("h");
+        arrayList.add("w");
+        arrayList.add("wo");
+        arrayList.add("wor");
+        arrayList.add("worl");
+        arrayList.add("world");
 
-    System.out.println(arrayList.indexOf(" "));
+        System.out.println(arrayList.indexOf(" "));
 
-  }
+    }
 
 }
 
