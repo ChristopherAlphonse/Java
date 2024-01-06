@@ -8,6 +8,7 @@ public class Switch {
     private static final Logger logger =
             Logger.getLogger(Switch.class.getName());
 
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         logger.info("Enter a fruit: ");
