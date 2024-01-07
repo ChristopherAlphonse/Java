@@ -1,1 +1,1 @@
-Lewrning principles of programming 
+Learning principles of programming 
