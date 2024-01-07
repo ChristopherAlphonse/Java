@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-# Java Documentation
-
 ## Data Structures and Algorithms
 
 This documentation covers the study of Data Structures and Algorithms using resources such as LeetCode, Coursera, and school.
@@ -18,4 +14,3 @@ This documentation covers the study of Data Structures and Algorithms using reso
 
 - Traditional educational institutions provide a foundation for learning Java, data structures, and algorithms.
 
->>>>>>> a75c59405addc3e2689ee29a335df78e6581ecda
