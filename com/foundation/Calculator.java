@@ -36,7 +36,7 @@ public class Calculator {
             int b = userIn.nextInt();
 
             int answer = calculate(op, a, b);
-            logger.log(Level.INFO, "\u001B[32m" + "Answer is: " + answer + "\u001B[0m");
+            logger.log(Level.INFO, () -> "\u001B[32m" + "Answer is: " + answer + "\u001B[0m");
 
         } else {
             logger.warning("Invalid operator. Try again.");

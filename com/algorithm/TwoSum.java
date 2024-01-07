@@ -2,8 +2,12 @@ package com.algorithm;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class TwoSum {
+    private static final Logger logger = Logger.getLogger(TwoSum.class.getName());
+
 
     public static void main(String[] args) {
         TwoSum twoSumObj = new TwoSum();
@@ -13,9 +17,11 @@ public class TwoSum {
 
         int[] result = twoSumObj.solution(nums, target);
 
-        System.out.println(
-                "Indices of the two numbers: " + result[0] + ", " + result[1]);
+
+        logger.log(Level.INFO, () -> "Indices of the two numbers: " + result[0] + ", " + result[1]);
+
     }
+
 
     public int[] solution(int[] nums, int target) {
         Map<Integer, Integer> numMap = new HashMap<>();

@@ -1,23 +1,26 @@
 package com.foundation;
 
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class CaseCheck {
+    private static final Logger logger = Logger.getLogger(CaseCheck.class.getName());
 
     public static void main(String[] args) {
 
         Scanner userIn = new Scanner(System.in);
-        System.out.print("enter:");
+        logger.info("enter:");
         char character = userIn.next().trim().charAt(0);
         // trim = remove white spaces if any, charAt(0) = same as [0]
 
         if (character >= 'a' && character <= 'z') {
-            System.out.print(" Lowercase ");
+            logger.info(" Lowercase ");
         } else {
-            System.out.print(" Uppercase ");
+            logger.info(" Uppercase ");
         }
 
-        System.out.print("character is: " + character);
+        logger.log(Level.INFO, () -> "character is: " + character);
         userIn.close();
     }
 
