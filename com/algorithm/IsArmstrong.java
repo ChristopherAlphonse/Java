@@ -26,9 +26,9 @@ public class IsArmstrong {
         }
 
         if (result == number) {
-            logger.info("is ArmStrong: %s ");
+            logger.info("is ArmStrong: ");
         } else {
-            logger.info("is not ArmStrong: %s");
+            logger.info("is not ArmStrong");
         }
 
         in.close();

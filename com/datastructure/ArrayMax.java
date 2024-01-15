@@ -30,9 +30,14 @@ public class ArrayMax {
     }
 
     static int findMaxValue(int[] n) {
+        if (n == null) {
+            return -1;
+        }
+
         int result = n[0];
 
         for (int num : n) {
+
             if (num > result) {
                 result = num;
             }
@@ -42,6 +47,16 @@ public class ArrayMax {
     }
 
     static int findMaxRange(int[] n, int start, int end) {
+
+        if (end > start) {
+            return -1;
+        }
+
+        if (n == null) {
+            return -1;
+        }
+
+
         int result = n[start];
 
         for (int i = start; i <= end; i++) {
