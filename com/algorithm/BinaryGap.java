@@ -2,6 +2,7 @@ package com.algorithm;
 
 public class BinaryGap {
 
+
     public static void main(String[] args) {
         BinaryGap bg = new BinaryGap();
         int result = bg.solution(9);
