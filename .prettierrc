@@ -1,0 +1,16 @@
+{
+	"overrides": [
+		{
+			"files": "*.java",
+			"options": {
+				"parser": "java",
+				"tabWidth": 4,
+				"useTabs": false,
+				"printWidth": 120,
+				"singleQuote": true,
+				"semi": true,
+				"trailingComma": "all"
+			}
+		}
+	]
+}
