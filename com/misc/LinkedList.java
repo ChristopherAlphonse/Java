@@ -56,6 +56,7 @@ public class LinkedList {
 		length++;
 	}
 
+
 	public static void main(String[] args) {
 		LinkedList myLinkedList = new LinkedList(101);
 
