@@ -55,12 +55,20 @@ public class LinkedList {
 		}
 		length++;
 	}
+
+	public static void main(String[] args) {
+		LinkedList myLinkedList = new LinkedList(101);
+
+		myLinkedList.append(24);
+		myLinkedList.append(39);
+		myLinkedList.append(43);
+
+
+		myLinkedList.printList();
+		System.out.println("The length : " + myLinkedList.length);
+	}
 }
 
 
-public static void main(String[] args) {
-	LinkedList myLinkedList = new LinkedList(5);
-	myLinkedList.printList();
 
-}
-}
+
