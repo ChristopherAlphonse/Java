@@ -1,6 +1,7 @@
 package com.misc;
 
 public class LinkedList {
+
 	private Node head;
 	private Node tail;
 	private int length;
@@ -42,7 +43,6 @@ public class LinkedList {
 		System.out.println(length);
 	}
 
-
 	public void append(int data) {
 		Node newNodeData = new Node(data);
 
@@ -56,20 +56,51 @@ public class LinkedList {
 		length++;
 	}
 
+	public Node removeLast() {
+		if (length == 0)
+			return null;
+		// check for length
+		Node temp = head;
+		Node placeHolder = head;
+		// while loops runs until temp.next is = to null
+		while (temp.next != null) {
+			placeHolder = temp;
+			temp = temp.next;
+		}
+		tail = placeHolder;
+		tail.next = null;
+		length--;
+		// if there no items remain head and tail should not point to zero but null
+		if (length == 0) {
+			tail = null;
+			head = null;
+		}
+
+		return temp;
+	}
+
+	public void prepend(int data) {
+		Node newNode = new Node(data);
+		if (length == 0) {
+			head = newNode;
+			tail = newNode;
+		}
+
+	}
 
 	public static void main(String[] args) {
 		LinkedList myLinkedList = new LinkedList(101);
 
 		myLinkedList.append(24);
 		myLinkedList.append(39);
-		myLinkedList.append(43);
 
+		System.out.println(myLinkedList.removeLast());
+		System.out.println(myLinkedList.removeLast());
+		System.out.println(myLinkedList.removeLast());
+		System.out.println(myLinkedList.removeLast());
 
 		myLinkedList.printList();
 		System.out.println("The length : " + myLinkedList.length);
 	}
+
 }
-
-
-
-
