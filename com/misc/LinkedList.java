@@ -31,15 +31,15 @@ public class LinkedList {
 		}
 	}
 
-	public void getHeadNode() {
+	public void peekHead() {
 		System.out.println(head.data);
 	}
 
-	public void getTailNode() {
+	public void peekTail() {
 		System.out.println(tail.data);
 	}
 
-	public void getLengthOfNode() {
+	public void getLength() {
 		System.out.println(length);
 	}
 
@@ -70,18 +70,17 @@ public class LinkedList {
 
 	public Node removeFirst() {
 
-		// objective declare a temp var to head , then nullify head, then temp = null , then length then
-		// decrease the
-		// length
-		// when there no long a pointer on the Node.
 
 		if (length == 0)
 			return null;
 
 		Node temp = head;
-		head = null;
+		head = head.next;
 		temp.next = null;
 		length--;
+		if (length == 0) {
+			tail = null;
+		}
 
 		return temp;
 
@@ -111,27 +110,26 @@ public class LinkedList {
 		return temp;
 	}
 
+
+	public Node fecthIndex(int index) {
+		if (index < 0 || index >= length) {
+			return null;
+
+			
+		}
+	}
+
 	public static void main(String[] args) {
-		LinkedList myLinkedList = new LinkedList(2);
-		myLinkedList.removeFirst();
-		myLinkedList.append(3);
-		myLinkedList.append(4);
-		myLinkedList.append(5);
-		myLinkedList.append(6);
-		myLinkedList.append(7);
-		myLinkedList.append(8);
-		myLinkedList.append(9);
-		myLinkedList.append(10);
-		myLinkedList.append(11);
+		LinkedList myLinkedList = new LinkedList(1);
+		myLinkedList.peekTail();
 		myLinkedList.append(12);
-//
+		myLinkedList.append(13);
 		myLinkedList.prepend(1);
 
-		//
 
-		myLinkedList.printList();
+		System.out.println("The length : ");
+		myLinkedList.getLength();
 
-		System.out.println("The length : " + myLinkedList.length);
 	}
 
 }
