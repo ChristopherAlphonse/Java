@@ -1,12 +1,17 @@
 package com.misc;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class LinkedList {
+	private static final Logger LOGGER =
+			Logger.getLogger(LinkedList.class.getName());
 
 	private Node head;
 	private Node tail;
 	private int length;
 
-	class Node {
+	static class Node {
 		int data;
 		Node next;
 
@@ -26,21 +31,21 @@ public class LinkedList {
 	public void printList() {
 		Node temp = head;
 		while (temp != null) {
-			System.out.println(temp.data);
+			LOGGER.log(Level.FINE, String.valueOf(temp.data));
 			temp = temp.next;
 		}
 	}
 
 	public void getHeadNode() {
-		System.out.println(head.data);
+		LOGGER.log(Level.FINE, String.valueOf(head.data));
 	}
 
 	public void getTailNode() {
-		System.out.println(tail.data);
+		LOGGER.log(Level.FINE, String.valueOf(tail.data));
 	}
 
 	public void getLengthOfNode() {
-		System.out.println(length);
+		LOGGER.log(Level.FINE, String.valueOf(length));
 	}
 
 	public void append(int data) {
@@ -65,25 +70,25 @@ public class LinkedList {
 			newNode.next = head;
 			head = newNode;
 		}
-
+		length++;
 	}
 
 	public Node removeFirst() {
-
-		// objective declare a temp var to head , then nullify head, then temp if null , then length then
-		// decrease the
-		// length
-		// when there no long a pointer on the Node.
-
 		if (length == 0)
 			return null;
-
+		Node temp = head;
+		head = head.next;
+		temp.next = null;
+		length--;
+		if (length == 0) {
+			tail = null;
+		}
+		return temp;
 	}
 
 	public Node removeLast() {
 		if (length == 0)
 			return null;
-		// check for length
 		Node temp = head;
 		Node placeHolder = head;
 
@@ -103,17 +108,40 @@ public class LinkedList {
 		return temp;
 	}
 
+	public Node find(int data) {
+		Node current = head;
+		while (current != null) {
+			if (current.data == data) {
+				return current;
+			}
+			current = current.next;
+		}
+		return null;
+	}
+
+	public Node remove(int data) {
+		if (head == null) {
+			return null;
+		}
+		if (head.data == data) {
+			head = head.next;
+			return head;
+		}
+		Node current = head;
+		while (current.next != null) {
+			if (current.next.data == data) {
+				current.next = current.next.next;
+				return head;
+			}
+			current = current.next;
+		}
+		return head;
+	}
+
 	public static void main(String[] args) {
 		LinkedList myLinkedList = new LinkedList(2);
 		myLinkedList.append(3);
 		myLinkedList.append(4);
 		myLinkedList.prepend(1);
-
-		//
-
-		myLinkedList.printList();
-
-		System.out.println("The length : " + myLinkedList.length);
 	}
-
 }

@@ -3,6 +3,27 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "linearSearch",
+			"request": "launch",
+			"mainClass": "com.misc.linearSearch",
+			"projectName": "Java-Foundation_824d64eb"
+		},
+		{
+			"type": "java",
+			"name": "Questions",
+			"request": "launch",
+			"mainClass": "com.algorithm.Questions",
+			"projectName": "Java-Foundation_824d64eb"
+		},
+		{
+			"type": "java",
+			"name": "Reverse",
+			"request": "launch",
+			"mainClass": "com.algorithm.Reverse",
+			"projectName": "Java-Foundation_824d64eb"
+		},
+		{
+			"type": "java",
 			"name": "building",
 			"request": "launch",
 			"mainClass": "com.misc.building",
