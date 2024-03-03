@@ -3,6 +3,7 @@
 	"configurations": [
 		{
 			"type": "java",
+<<<<<<< HEAD
 			"name": "Questions",
 			"request": "launch",
 			"mainClass": "com.algorithm.Questions",
@@ -17,6 +18,8 @@
 		},
 		{
 			"type": "java",
+=======
+>>>>>>> 961a7b1d875127f58b05c4da75ce8462c718b092
 			"name": "building",
 			"request": "launch",
 			"mainClass": "com.misc.building",

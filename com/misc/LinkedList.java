@@ -36,6 +36,7 @@ public class LinkedList {
 		}
 	}
 
+<<<<<<< HEAD
 	public void getHeadNode() {
 		LOGGER.log(Level.FINE, String.valueOf(head.data));
 	}
@@ -46,6 +47,18 @@ public class LinkedList {
 
 	public void getLengthOfNode() {
 		LOGGER.log(Level.FINE, String.valueOf(length));
+=======
+	public void peekHead() {
+		System.out.println(head.data);
+	}
+
+	public void peekTail() {
+		System.out.println(tail.data);
+	}
+
+	public void getLength() {
+		System.out.println(length);
+>>>>>>> 961a7b1d875127f58b05c4da75ce8462c718b092
 	}
 
 	public void append(int data) {
@@ -74,8 +87,16 @@ public class LinkedList {
 	}
 
 	public Node removeFirst() {
+<<<<<<< HEAD
 		if (length == 0)
 			return null;
+=======
+
+
+		if (length == 0)
+			return null;
+
+>>>>>>> 961a7b1d875127f58b05c4da75ce8462c718b092
 		Node temp = head;
 		head = head.next;
 		temp.next = null;
@@ -83,7 +104,14 @@ public class LinkedList {
 		if (length == 0) {
 			tail = null;
 		}
+<<<<<<< HEAD
 		return temp;
+=======
+
+		return temp;
+
+
+>>>>>>> 961a7b1d875127f58b05c4da75ce8462c718b092
 	}
 
 	public Node removeLast() {
@@ -108,6 +136,7 @@ public class LinkedList {
 		return temp;
 	}
 
+<<<<<<< HEAD
 	public Node find(int data) {
 		Node current = head;
 		while (current != null) {
@@ -136,12 +165,30 @@ public class LinkedList {
 			current = current.next;
 		}
 		return head;
+=======
+
+	public Node fecthIndex(int index) {
+		if (index < 0 || index >= length) {
+			return null;
+
+			
+		}
+>>>>>>> 961a7b1d875127f58b05c4da75ce8462c718b092
 	}
 
 	public static void main(String[] args) {
-		LinkedList myLinkedList = new LinkedList(2);
-		myLinkedList.append(3);
-		myLinkedList.append(4);
+		LinkedList myLinkedList = new LinkedList(1);
+		myLinkedList.peekTail();
+		myLinkedList.append(12);
+		myLinkedList.append(13);
 		myLinkedList.prepend(1);
+<<<<<<< HEAD
+=======
+
+
+		System.out.println("The length : ");
+		myLinkedList.getLength();
+
+>>>>>>> 961a7b1d875127f58b05c4da75ce8462c718b092
 	}
 }
