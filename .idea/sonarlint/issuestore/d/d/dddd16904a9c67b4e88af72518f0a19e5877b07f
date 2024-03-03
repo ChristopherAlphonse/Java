@@ -1,6 +1,8 @@
 
-L	java:S106"+Replace this use of System.out by a logger.(·üâ’üÿÿÿÿ8àƒ£èŞ1
-F	java:S106#"+Replace this use of System.out by a logger.(âäÛp8áƒ£èŞ1
-G	java:S106'"+Replace this use of System.out by a logger.(û‰Íë8âƒ£èŞ1
-L	java:S106+"+Replace this use of System.out by a logger.(îÁ–ûÿÿÿÿ8ãƒ£èŞ1
-H	java:S106‚"+Replace this use of System.out by a logger.(ÈÖœí8ëƒ£èŞ1
+A
+java:S2629y"$Invoke method(s) only conditionally.(èğ—ª8ÑŠÁ¤à1
+A
+java:S2629}"$Invoke method(s) only conditionally.(Ü®¤Ò8ÑŠÁ¤à1
+B
+java:S2629"$Invoke method(s) only conditionally.(‡ıÂü8ÑŠÁ¤à1
+Y	java:S125"<This block of commented-out lines of code should be removed.(«ÃËï8«‹Á¤à1

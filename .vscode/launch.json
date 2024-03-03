@@ -3,6 +3,20 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "Pointing",
+			"request": "launch",
+			"mainClass": "com.misc.Pointing",
+			"projectName": "Java-Foundation_824d64eb"
+		},
+		{
+			"type": "java",
+			"name": "Pointers",
+			"request": "launch",
+			"mainClass": "com.misc.Pointers",
+			"projectName": "Java-Foundation_824d64eb"
+		},
+		{
+			"type": "java",
 			"name": "linearSearch",
 			"request": "launch",
 			"mainClass": "com.misc.linearSearch",
