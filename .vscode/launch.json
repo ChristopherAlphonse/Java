@@ -3,6 +3,13 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "Fib",
+			"request": "launch",
+			"mainClass": "com.misc.Fib",
+			"projectName": "Java-Foundation_824d64eb"
+		},
+		{
+			"type": "java",
 			"name": "Dbj2Hash",
 			"request": "launch",
 			"mainClass": "com.misc.Dbj2Hash",
