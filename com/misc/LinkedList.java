@@ -117,12 +117,29 @@ public class LinkedList {
 		return head;
 	}
 
+	public void peekHead() {
+		LOGGER.info(String.valueOf(head.data));
+	}
+
+	public void peekTail() {
+		LOGGER.info(String.valueOf(tail.data));
+	}
+
+	public void getLength() {
+		LOGGER.info(String.valueOf("length " + length));
+	}
+
 	public static void main(String[] args) {
 		LinkedList myLinkedList = new LinkedList(1);
 
 		myLinkedList.append(12);
 		myLinkedList.append(13);
 		myLinkedList.prepend(1);
+
+		//
+
+		// myLinkedList.peekTail();
+		myLinkedList.getLength();
 
 	}
 }
