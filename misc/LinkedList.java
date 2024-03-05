@@ -151,11 +151,11 @@ public class LinkedList {
 	public static void main(String[] args) {
 		LinkedList myLinkedList = new LinkedList(0);
 
-		for (int i = 1; i <= 20; i++) {
+		for (int i = 2; i <= 20; i++) {
 			myLinkedList.append(i);
 		}
 
-		myLinkedList.get(0);
+		System.out.println(myLinkedList.get(3).data);
 
 	}
 }
