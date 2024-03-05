@@ -1,5 +1,0 @@
-{
-	"java.debug.settings.onBuildFailureProceed": true,
-	"cSpell.words": ["Bigollo", "curr", "datastructure", "nums"],
-	"java.format.settings.url": ".vscode/eclipse-java-google-style.xml"
-}
