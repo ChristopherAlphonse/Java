@@ -148,14 +148,26 @@ public class LinkedList {
 		}
 	}
 
+	public boolean set(int index, int value) {
+		Node temp = get(index);
+		if (temp != null) {
+			temp.data = value;
+			return true;
+		}
+		return false;
+	}
+
 	public static void main(String[] args) {
 		LinkedList myLinkedList = new LinkedList(0);
 
-		for (int i = 2; i <= 20; i++) {
+		for (int i = 1; i <= 20; i++) {
 			myLinkedList.append(i);
 		}
 
-		System.out.println(myLinkedList.get(3).data);
+		myLinkedList.set(0, 999);
+		myLinkedList.printList();
+
+
 
 	}
 }
