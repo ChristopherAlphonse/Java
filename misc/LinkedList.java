@@ -3,7 +3,7 @@ package misc;
 import java.util.logging.Logger;
 
 public class LinkedList {
-	private static final Logger LOGGER = Logger.getLogger(LinkedList.class.getName());
+	Logger logger = Logger.getLogger(getClass().getName());
 
 	private Node head;
 	private Node tail;
@@ -98,10 +98,11 @@ public class LinkedList {
 	}
 
 	public Node get(int index) {
-		Node temp = head;
-		if (index < 0 || index >= length) {
+
+		if (index < 0 || index >= length)
 			return null;
-		}
+
+		Node temp = head;
 		for (int i = 0; i < index; i++) {
 			temp = temp.next;
 
@@ -129,23 +130,36 @@ public class LinkedList {
 	}
 
 	public void peekHead() {
-		LOGGER.info(String.valueOf(head.data));
+		System.out.println(head.data);
 	}
 
 	public void peekTail() {
-		LOGGER.info(String.valueOf(tail.data));
+		System.out.println(tail.data);
 	}
 
 	public void getLength() {
-		LOGGER.info(String.valueOf("length " + length));
+		System.out.println(length);
+
+	}
+
+	public void printList() {
+		Node current = head;
+		while (current != null) {
+			System.out.println(current.data);
+			current = current.next;
+		}
 	}
 
 	public static void main(String[] args) {
-		LinkedList myLinkedList = new LinkedList(1);
+		LinkedList myLinkedList = new LinkedList(0);
+		myLinkedList.append(1);
+		myLinkedList.append(2);
+		myLinkedList.append(3);
+		myLinkedList.append(4);
+		myLinkedList.append(5);
 
-		myLinkedList.append(12);
-		myLinkedList.append(13);
-		myLinkedList.prepend(9);
-		System.out.println(myLinkedList.get(9));
+		myLinkedList.printList();
+
+
 	}
 }
