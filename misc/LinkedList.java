@@ -1,9 +1,7 @@
 package misc;
 
-import java.util.logging.Logger;
-
 public class LinkedList {
-	Logger logger = Logger.getLogger(getClass().getName());
+
 
 	private Node head;
 	private Node tail;
@@ -152,14 +150,12 @@ public class LinkedList {
 
 	public static void main(String[] args) {
 		LinkedList myLinkedList = new LinkedList(0);
-		myLinkedList.append(1);
-		myLinkedList.append(2);
-		myLinkedList.append(3);
-		myLinkedList.append(4);
-		myLinkedList.append(5);
 
-		myLinkedList.printList();
+		for (int i = 1; i <= 20; i++) {
+			myLinkedList.append(i);
+		}
 
+		myLinkedList.get(0);
 
 	}
 }
