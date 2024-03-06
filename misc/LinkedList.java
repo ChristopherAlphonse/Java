@@ -159,12 +159,30 @@ public class LinkedList {
 		return false;
 	}
 
+
+
+	public boolean insert(int index, int data) {
+		if (index < 0 || index > length)
+			return false;
+		if (index == 0) {
+			prepend(data);
+			return true;
+		}
+		Node newNode = new Node(data);
+		Node temp = get(index - 1);
+		newNode.next = temp.next;
+		temp.next = newNode;
+		length++;
+		return true;
+	}
+
 	public static void main(String[] args) {
 		LinkedList myLinkedList = new LinkedList(0);
-		for (int i = 1; i <= 4; i++) {
+		for (int i = 1; i <= 3; i++) {
 			myLinkedList.append(i);
 		}
-		myLinkedList.set(2, 999);
+		myLinkedList.set(2, 999); // overriding the current value
+		myLinkedList.insert(0, 2500); // insert at an index and update the length
 		myLinkedList.printList();
 	}
 }
