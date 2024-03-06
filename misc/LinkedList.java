@@ -95,18 +95,7 @@ public class LinkedList {
 		return null;
 	}
 
-	public Node get(int index) {
 
-		if (index < 0 || index >= length)
-			return null;
-
-		Node temp = head;
-		for (int i = 0; i < index; i++) {
-			temp = temp.next;
-
-		}
-		return temp;
-	}
 
 	public Node remove(int data) {
 		if (head == null) {
@@ -148,6 +137,19 @@ public class LinkedList {
 		}
 	}
 
+	public Node get(int index) {
+
+		if (index < 0 || index >= length)
+			return null;
+
+		Node temp = head;
+		for (int i = 0; i < index; i++) {
+			temp = temp.next;
+
+		}
+		return temp;
+	}
+
 	public boolean set(int index, int value) {
 		Node temp = get(index);
 		if (temp != null) {
@@ -159,15 +161,10 @@ public class LinkedList {
 
 	public static void main(String[] args) {
 		LinkedList myLinkedList = new LinkedList(0);
-
-		for (int i = 1; i <= 20; i++) {
+		for (int i = 1; i <= 4; i++) {
 			myLinkedList.append(i);
 		}
-
-		myLinkedList.set(0, 999);
+		myLinkedList.set(2, 999);
 		myLinkedList.printList();
-
-
-
 	}
 }
