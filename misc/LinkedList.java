@@ -198,7 +198,7 @@ public class LinkedList {
 
 	/*
 	 * Methods: append, prepend, removeFirst, removeLast, find,peekHead, peekTail, length,
-	 * printList, get, set, insert, remove, reverse.
+	 * printList, get, set, insert, remove, reverse,findMiddleNode.
 	 */
 
 
