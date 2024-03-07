@@ -103,7 +103,7 @@ public class LinkedList {
 		System.out.println(tail.data);
 	}
 
-	public void getLength() {
+	public void length() {
 		System.out.println(length);
 
 	}
@@ -168,17 +168,32 @@ public class LinkedList {
 		return temp;
 	}
 
+	public Node reverseList() {
+		Node temp = head;
+		head = tail;
+		tail = temp;
+		Node after = temp.next;
+		Node before = null;
+
+		for (int i = 0; i < length; i++) {
+			after = temp.next;
+			temp.next = before;
+			before = temp;
+			temp = after;
+		}
+		return temp;
+	}
+
 	/*
-	 * Methods: append, prepend, removeFirst, removeLast, find,peekHead, peekTail, getLength,
-	 * printLength, printList, get, set, insert, remove
+	 * Methods: append, prepend, removeFirst, removeLast, find,peekHead, peekTail, length,
+	 * printList, get, set, insert, remove, reverse.
 	 */
 	public static void main(String[] args) {
 		LinkedList myLinkedList = new LinkedList(0);
 		for (int i = 1; i <= 5; i++) {
 			myLinkedList.append(i);
 		}
-
-
+		myLinkedList.reverseList();
 		myLinkedList.printList();
 	}
 
