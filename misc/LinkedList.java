@@ -184,19 +184,33 @@ public class LinkedList {
 		return temp;
 	}
 
+	public Node findMiddleNode() {
+		Node slow = head;
+		Node fast = head;
+
+		while (fast != null && fast.next == null) {
+			slow = head.next;
+			fast = head.next.next;
+		}
+		return slow;
+
+	}
+
 	/*
 	 * Methods: append, prepend, removeFirst, removeLast, find,peekHead, peekTail, length,
 	 * printList, get, set, insert, remove, reverse.
 	 */
+
+
+
 	public static void main(String[] args) {
 		LinkedList myLinkedList = new LinkedList(0);
 		for (int i = 1; i <= 5; i++) {
 			myLinkedList.append(i);
 		}
-		myLinkedList.reverseList();
-		myLinkedList.printList();
+
+
+		System.out.println(myLinkedList.findMiddleNode(););
 	}
-
-
 
 }
