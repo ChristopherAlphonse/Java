@@ -184,13 +184,13 @@ public class LinkedList {
 		return temp;
 	}
 
-	public Node findMiddleNode() {
+	public Node findMiddleNode(Node head) {
 		Node slow = head;
 		Node fast = head;
 
-		while (fast != null && fast.next == null) {
-			slow = head.next;
-			fast = head.next.next;
+		while (fast != null && fast.next != null) {
+			slow = slow.next;
+			fast = fast.next.next;
 		}
 		return slow;
 
@@ -205,12 +205,12 @@ public class LinkedList {
 
 	public static void main(String[] args) {
 		LinkedList myLinkedList = new LinkedList(0);
-		for (int i = 1; i <= 5; i++) {
+		for (int i = 1; i <= 20; i++) {
 			myLinkedList.append(i);
 		}
 
-
-		System.out.println(myLinkedList.findMiddleNode(););
+		Node middleNode = myLinkedList.findMiddleNode(myLinkedList.head);
+		System.out.println(middleNode.data);
 	}
 
 }
