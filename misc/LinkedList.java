@@ -95,27 +95,6 @@ public class LinkedList {
 		return null;
 	}
 
-
-
-	public Node remove(int data) {
-		if (head == null) {
-			return null;
-		}
-		if (head.data == data) {
-			head = head.next;
-			return head;
-		}
-		Node current = head;
-		while (current.next != null) {
-			if (current.next.data == data) {
-				current.next = current.next.next;
-				return head;
-			}
-			current = current.next;
-		}
-		return head;
-	}
-
 	public void peekHead() {
 		System.out.println(head.data);
 	}
@@ -150,16 +129,14 @@ public class LinkedList {
 		return temp;
 	}
 
-	public boolean set(int index, int value) {
+	public boolean set(int index, int data) {
 		Node temp = get(index);
 		if (temp != null) {
-			temp.data = value;
+			temp.data = data;
 			return true;
 		}
 		return false;
 	}
-
-
 
 	public boolean insert(int index, int data) {
 		if (index < 0 || index > length)
@@ -176,13 +153,35 @@ public class LinkedList {
 		return true;
 	}
 
+	public Node remove(int index) {
+		if (index < 0 || index >= length)
+			return null;
+		if (index == 0)
+			return removeFirst();
+		if (index == length - 1)
+			return removeLast();
+		Node prev = get(index - 1);
+		Node temp = prev.next;
+		prev.next = temp.next;
+		temp.next = null;
+		length--;
+		return temp;
+	}
+
+	/*
+	 * Methods: append, prepend, removeFirst, removeLast, find,peekHead, peekTail, getLength,
+	 * printLength, printList, get, set, insert, remove
+	 */
 	public static void main(String[] args) {
 		LinkedList myLinkedList = new LinkedList(0);
-		for (int i = 1; i <= 3; i++) {
+		for (int i = 1; i <= 5; i++) {
 			myLinkedList.append(i);
 		}
-		myLinkedList.set(2, 999); // overriding the current value
-		myLinkedList.insert(0, 2500); // insert at an index and update the length
+
+
 		myLinkedList.printList();
 	}
+
+
+
 }
