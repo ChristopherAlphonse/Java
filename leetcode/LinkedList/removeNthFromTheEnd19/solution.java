@@ -1,7 +1,9 @@
 package leetcode.LinkedList.removeNthFromTheEnd19;
 
+import java.util.List;
+
 class solution {
-    public ListNode removeNthFromEnd(ListNode head, int n) {
+    public List removeNthFromEnd(ListNode head, int n) {
         ListNode dummy = new ListNode(0);
         dummy.next = head;
         ListNode left = dummy;
