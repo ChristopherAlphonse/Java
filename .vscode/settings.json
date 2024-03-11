@@ -14,5 +14,6 @@
 	"typescript.inlayHints.parameterTypes.enabled": true,
 	"typescript.inlayHints.propertyDeclarationTypes.enabled": true,
 	"typescript.inlayHints.variableTypes.enabled": true,
-	"java.debug.settings.onBuildFailureProceed": true
+	"java.debug.settings.onBuildFailureProceed": true,
+	"java.format.settings.url": ".vscode/eclipse-java-google-style.xml"
 }
