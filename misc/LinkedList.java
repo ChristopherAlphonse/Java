@@ -1,7 +1,9 @@
 package misc;
 
-public class LinkedList {
+import java.util.HashSet;
+import java.util.Set;
 
+public class LinkedList {
 
 	private Node head;
 	private Node tail;
@@ -52,25 +54,25 @@ public class LinkedList {
 	public Node removeFirst() {
 		if (length == 0)
 			return null;
-		Node temp = head;
+		Node current = head;
 		head = head.next;
-		temp.next = null;
+		current.next = null;
 		length--;
 		if (length == 0) {
 			tail = null;
 		}
-		return temp;
+		return current;
 	}
 
 	public Node removeLast() {
 		if (length == 0)
 			return null;
-		Node temp = head;
+		Node current = head;
 		Node placeHolder = head;
 
-		while (temp.next != null) {
-			placeHolder = temp;
-			temp = temp.next;
+		while (current.next != null) {
+			placeHolder = current;
+			current = current.next;
 		}
 		tail = placeHolder;
 		tail.next = null;
@@ -81,13 +83,13 @@ public class LinkedList {
 			head = null;
 		}
 
-		return temp;
+		return current;
 	}
 
-	public Node find(int data) {
+	public Node find(int target) {
 		Node current = head;
 		while (current != null) {
-			if (current.data == data) {
+			if (current.data == target) {
 				return current;
 			}
 			current = current.next;
@@ -121,18 +123,31 @@ public class LinkedList {
 		if (index < 0 || index >= length)
 			return null;
 
-		Node temp = head;
+		Node current = head;
 		for (int i = 0; i < index; i++) {
-			temp = temp.next;
+			current = current.next;
 
 		}
-		return temp;
+		return current;
+	}
+
+	public Node getNodeValue(Node head, int target) {
+		Node current = head;
+
+		while (current != null) {
+			if (target == current.data) {
+				return current;
+			}
+			current = current.next;
+		}
+
+		return null;
 	}
 
 	public boolean set(int index, int data) {
-		Node temp = get(index);
-		if (temp != null) {
-			temp.data = data;
+		Node current = get(index);
+		if (current != null) {
+			current.data = data;
 			return true;
 		}
 		return false;
@@ -146,9 +161,9 @@ public class LinkedList {
 			return true;
 		}
 		Node newNode = new Node(data);
-		Node temp = get(index - 1);
-		newNode.next = temp.next;
-		temp.next = newNode;
+		Node current = get(index - 1);
+		newNode.next = current.next;
+		current.next = newNode;
 		length++;
 		return true;
 	}
@@ -161,27 +176,26 @@ public class LinkedList {
 		if (index == length - 1)
 			return removeLast();
 		Node prev = get(index - 1);
-		Node temp = prev.next;
-		prev.next = temp.next;
-		temp.next = null;
+		Node current = prev.next;
+		prev.next = current.next;
+		current.next = null;
 		length--;
-		return temp;
+		return current;
 	}
 
 	public Node reverseList() {
-		Node temp = head;
+		Node current = head;
 		head = tail;
-		tail = temp;
-		Node after = temp.next;
+		tail = current;
 		Node before = null;
 
-		for (int i = 0; i < length; i++) {
-			after = temp.next;
-			temp.next = before;
-			before = temp;
-			temp = after;
+		while (current != null) {
+			Node after = current.next;
+			current.next = before;
+			before = current;
+			current = after;
 		}
-		return temp;
+		return tail;
 	}
 
 	public Node findMiddleNode(Node head) {
@@ -196,12 +210,98 @@ public class LinkedList {
 
 	}
 
+	public int addSum(Node head) {
+		int sum = 0;
+		Node current = head;
+
+		while (current != null) {
+			sum += current.data;
+			current = current.next;
+		}
+
+		return sum;
+	}
+
+	public void removeDuplicates() {
+		Set<Integer> values = new HashSet<>();
+
+		Node prev = null;
+		Node curr = head;
+
+		while (curr != null) {
+			if (values.contains(curr.data)) {
+				prev.next = curr.next;
+				length -= 1;
+			} else {
+				values.add(curr.data);
+				prev = curr;
+
+			}
+			curr = curr.next;
+
+		}
+	}
+
+	public boolean hasCycle(Node head) {
+		Node fast = head;
+		Node slow = head;
+
+		while (fast != null && fast.next != null) {
+			fast = fast.next.next;
+			slow = slow.next;
+			if (fast == slow)
+				return true;
+		}
+		return false;
+
+	}
+
+	public Node findKthFromEnd(int k) {
+
+		Node slow = head;
+		Node fast = head;
+
+		// Move fast pointer k steps ahead
+		for (int i = 0; i < k; i++) {
+			if (fast == null) {
+				return null;
+			}
+			fast = fast.next;
+		}
+
+		// Move both pointers until fast reaches the end
+		while (fast != null) {
+			slow = slow.next;
+			fast = fast.next;
+		}
+
+		return slow;
+	}
+
+	public Node removeNthFromEnd(Node head, int n) {
+		Node dummy = new Node(0);
+		dummy.next = head;
+		Node left = dummy;
+		Node right = dummy;
+
+		for (int i = 0; i <= n; i++) {
+			right = right.next;
+		}
+
+		while (right != null) {
+			left = left.next;
+			right = right.next;
+		}
+
+		left.next = left.next.next;
+
+		return dummy.next;
+	}
+
 	/*
 	 * Methods: append, prepend, removeFirst, removeLast, find,peekHead, peekTail, length,
 	 * printList, get, set, insert, remove, reverse,findMiddleNode.
 	 */
-
-
 
 	public static void main(String[] args) {
 		LinkedList myLinkedList = new LinkedList(0);

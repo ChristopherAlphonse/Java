@@ -1,6 +1,6 @@
 package leetcode.LinkedList.removeDups;
 
-public public void removeDuplicates(){
+ public void removeDuplicates(){
         Set<Integer> values = new HashSet<>();
         
         Node prev = null;
@@ -18,9 +18,9 @@ public public void removeDuplicates(){
             curr = curr.next;
             
         }
-    } {
+ } 
     
-}
+
 
 
 /*
