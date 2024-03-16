@@ -35,5 +35,7 @@ class Switch {
 
                         default -> logger.warning("Try again. Enter a valid fruit.");
                 }
+
         }
+
 }

@@ -6,7 +6,6 @@ public class CountNums {
 
     public static void main(String[] args) {
         int n = 999123409;
-        // int target = 9;
 
         Scanner userInput = new Scanner(System.in);
 
