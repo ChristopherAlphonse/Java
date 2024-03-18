@@ -6,6 +6,13 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "lcp",
+			"request": "launch",
+			"mainClass": "misc.lcp",
+			"projectName": "Java-Foundation_824d64eb"
+		},
+		{
+			"type": "java",
 			"name": "CountNums",
 			"request": "launch",
 			"mainClass": "foundation.CountNums",
