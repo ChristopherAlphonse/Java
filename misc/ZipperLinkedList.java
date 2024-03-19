@@ -1,6 +1,6 @@
 package misc;
 
-import misc.LinkedList.Node;
+import LinkedList.LinkedList.Node;
 
 public class ZipperLinkedList {
 

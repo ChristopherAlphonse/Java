@@ -1,6 +1,6 @@
 package leetcode.LinkedList.reverseALinkedList
 
-import misc.LinkedList.Node;
+import LinkedList.LinkedList.Node;
 
 /*
  * 206. Reverse Linked List Easy Topics Companies Given the head of a singly linked list, reverse
