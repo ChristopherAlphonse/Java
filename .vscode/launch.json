@@ -6,6 +6,13 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "DLinkedList",
+			"request": "launch",
+			"mainClass": "LinkedList.DLinkedList",
+			"projectName": "Java-Foundation_631fd9cd"
+		},
+		{
+			"type": "java",
 			"name": "lcp",
 			"request": "launch",
 			"mainClass": "misc.lcp",
