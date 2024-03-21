@@ -1,7 +1,7 @@
 package misc;
 
-import LinkedList.LinkedList;
-import LinkedList.LinkedList.Node;
+import foundation.LinkedList.LinkedList;
+import foundation.LinkedList.LinkedList.Node;
 
 public class AddSumLinkedList {
 
