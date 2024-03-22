@@ -1,9 +1,34 @@
 {
-	// Use IntelliSense to learn about possible attributes.
-	// Hover to view descriptions of existing attributes.
-	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
 	"version": "0.2.0",
 	"configurations": [
+		{
+			"type": "java",
+			"name": "ArrayMax",
+			"request": "launch",
+			"mainClass": "datastructure.ArrayMax",
+			"projectName": "Java-Foundation_631fd9cd"
+		},
+		{
+			"type": "java",
+			"name": "MyQueue",
+			"request": "launch",
+			"mainClass": "datastructure.MyQueue",
+			"projectName": "Java-Foundation_631fd9cd"
+		},
+		{
+			"type": "java",
+			"name": "MyPriorityQueue",
+			"request": "launch",
+			"mainClass": "datastructure.MyPriorityQueue",
+			"projectName": "Java-Foundation_631fd9cd"
+		},
+		{
+			"type": "java",
+			"name": "MyStack",
+			"request": "launch",
+			"mainClass": "datastructure.MyStack",
+			"projectName": "Java-Foundation_631fd9cd"
+		},
 		{
 			"type": "java",
 			"name": "DLinkedList",
@@ -296,6 +321,25 @@
 			"request": "launch",
 			"mainClass": "misc.linearSearch",
 			"projectName": "Java-Foundation_824d64eb"
+		},
+		{
+			"name": "C/C++ Runner: Debug Session",
+			"type": "cppdbg",
+			"request": "launch",
+			"args": [],
+			"stopAtEntry": false,
+			"externalConsole": false,
+			"cwd": "/home/chris-laptop/Desktop/Java-Foundation",
+			"program": "/home/chris-laptop/Desktop/Java-Foundation/build/Debug/outDebug",
+			"MIMode": "gdb",
+			"miDebuggerPath": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			]
 		}
 	]
 }

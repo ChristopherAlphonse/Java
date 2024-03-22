@@ -8,7 +8,8 @@ public class MyQueue {
         queue.offer("steve");
         queue.offer("josh");
         queue.offer("julius");
-        System.out.println(queue.indexOf("daman"));
+
+        System.out.println(queue.indexOf("steve"));
     }
 }
 

@@ -14,7 +14,7 @@ public class MyStack {
 
         Object searchStack = stack.search("dog");
 
-        System.out.println(stack);
+        System.out.println(stack.size());
         System.out.println(searchStack);
 
     }
