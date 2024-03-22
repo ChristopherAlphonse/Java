@@ -3,6 +3,20 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "Questions",
+			"request": "launch",
+			"mainClass": "algorithm.Questions",
+			"projectName": "Java-Foundation_631fd9cd"
+		},
+		{
+			"type": "java",
+			"name": "Reverse",
+			"request": "launch",
+			"mainClass": "algorithm.Reverse",
+			"projectName": "Java-Foundation_631fd9cd"
+		},
+		{
+			"type": "java",
 			"name": "ArrayMax",
 			"request": "launch",
 			"mainClass": "datastructure.ArrayMax",
