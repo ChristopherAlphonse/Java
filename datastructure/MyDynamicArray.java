@@ -49,5 +49,4 @@ public class MyDynamicArray {
     }
 }
 
-
 // this to be looked at in the future, good idea but not implemented well.

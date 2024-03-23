@@ -1,7 +1,6 @@
 package algorithm;
 
-public class Reverse {
-
+public class ReverseNumber {
 
     public static void main(String[] args) {
         int n = 123;
@@ -14,6 +13,5 @@ public class Reverse {
 
         System.out.println(answer);
     }
-
 
 }
