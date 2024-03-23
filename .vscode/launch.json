@@ -1,301 +1,331 @@
 {
-	// Use IntelliSense to learn about possible attributes.
-	// Hover to view descriptions of existing attributes.
-	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-	"version": "0.2.0",
-	"configurations": [
-		{
-			"type": "java",
-			"name": "DLinkedList",
-			"request": "launch",
-			"mainClass": "LinkedList.DLinkedList",
-			"projectName": "Java-Foundation_631fd9cd"
-		},
-		{
-			"type": "java",
-			"name": "lcp",
-			"request": "launch",
-			"mainClass": "misc.lcp",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "CountNums",
-			"request": "launch",
-			"mainClass": "foundation.CountNums",
-			"projectName": "Java-Foundation_631fd9cd"
-		},
-		{
-			"type": "java",
-			"name": "Fibonacci",
-			"request": "launch",
-			"mainClass": "foundation.Fibonacci",
-			"projectName": "Java-Foundation_631fd9cd"
-		},
-		{
-			"type": "java",
-			"name": "Overloading",
-			"request": "launch",
-			"mainClass": "foundation.Overloading",
-			"projectName": "Java-Foundation_631fd9cd"
-		},
-		{
-			"type": "java",
-			"name": "Switch",
-			"request": "launch",
-			"mainClass": "foundation.Switch",
-			"projectName": "Java-Foundation_631fd9cd"
-		},
-		{
-			"type": "java",
-			"name": "Current File",
-			"request": "launch",
-			"mainClass": "${file}"
-		},
-		{
-			"type": "java",
-			"name": "BinaryGap",
-			"request": "launch",
-			"mainClass": "algorithm.BinaryGap",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "BitMapping",
-			"request": "launch",
-			"mainClass": "algorithm.BitMapping",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "BitMapping$PrintSum",
-			"request": "launch",
-			"mainClass": "algorithm.BitMapping$PrintSum",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "IsArmstrong",
-			"request": "launch",
-			"mainClass": "algorithm.IsArmstrong",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "IsArmstrong$Calculator",
-			"request": "launch",
-			"mainClass": "algorithm.IsArmstrong$Calculator",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "Questions",
-			"request": "launch",
-			"mainClass": "algorithm.Questions",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "Reverse",
-			"request": "launch",
-			"mainClass": "algorithm.Reverse",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "TwoSum",
-			"request": "launch",
-			"mainClass": "algorithm.TwoSum",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "ArrayMax",
-			"request": "launch",
-			"mainClass": "datastructure.ArrayMax",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "MultiDimensionArrayList",
-			"request": "launch",
-			"mainClass": "datastructure.MultiDimensionArrayList",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "MyArray",
-			"request": "launch",
-			"mainClass": "datastructure.MyArray",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "MyArrayList",
-			"request": "launch",
-			"mainClass": "datastructure.MyArrayList",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "MyDynamicArray",
-			"request": "launch",
-			"mainClass": "datastructure.MyDynamicArray",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "MyLinkList",
-			"request": "launch",
-			"mainClass": "datastructure.MyLinkList",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "MyPriorityQueue",
-			"request": "launch",
-			"mainClass": "datastructure.MyPriorityQueue",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "MyQueue",
-			"request": "launch",
-			"mainClass": "datastructure.MyQueue",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "MyStack",
-			"request": "launch",
-			"mainClass": "datastructure.MyStack",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "Swap",
-			"request": "launch",
-			"mainClass": "datastructure.Swap",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "Basic",
-			"request": "launch",
-			"mainClass": "foundation.Basic",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "CaseCheck",
-			"request": "launch",
-			"mainClass": "foundation.CaseCheck",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "Conditions",
-			"request": "launch",
-			"mainClass": "foundation.Conditions",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "CountNums",
-			"request": "launch",
-			"mainClass": "foundation.CountNums",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "Fibonacci",
-			"request": "launch",
-			"mainClass": "foundation.Fibonacci",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "FindLargest",
-			"request": "launch",
-			"mainClass": "foundation.FindLargest",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "NestedSwitch",
-			"request": "launch",
-			"mainClass": "foundation.NestedSwitch",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "Overloading",
-			"request": "launch",
-			"mainClass": "foundation.Overloading",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "Shadowing",
-			"request": "launch",
-			"mainClass": "foundation.Shadowing",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "Switch",
-			"request": "launch",
-			"mainClass": "foundation.Switch",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "VariableArgs",
-			"request": "launch",
-			"mainClass": "foundation.VariableArgs",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "Cookie",
-			"request": "launch",
-			"mainClass": "misc.Cookie",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "Dbj2Hash",
-			"request": "launch",
-			"mainClass": "misc.Dbj2Hash",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "Fib",
-			"request": "launch",
-			"mainClass": "misc.Fib",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "LinkedList",
-			"request": "launch",
-			"mainClass": "misc.LinkedList",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "Pointing",
-			"request": "launch",
-			"mainClass": "misc.Pointing",
-			"projectName": "Java-Foundation_824d64eb"
-		},
-		{
-			"type": "java",
-			"name": "linearSearch",
-			"request": "launch",
-			"mainClass": "misc.linearSearch",
-			"projectName": "Java-Foundation_824d64eb"
-		}
-	]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "pairSequence",
+      "request": "launch",
+      "mainClass": "CrackingTheCode.pairSequence",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "spaceComplex",
+      "request": "launch",
+      "mainClass": "CrackingTheCode.spaceComplex",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "DLinkedList",
+      "request": "launch",
+      "mainClass": "LinkedList.DLinkedList",
+      "projectName": "Java-Foundation_631fd9cd"
+    },
+    {
+      "type": "java",
+      "name": "lcp",
+      "request": "launch",
+      "mainClass": "misc.lcp",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "CountNums",
+      "request": "launch",
+      "mainClass": "foundation.CountNums",
+      "projectName": "Java-Foundation_631fd9cd"
+    },
+    {
+      "type": "java",
+      "name": "Fibonacci",
+      "request": "launch",
+      "mainClass": "foundation.Fibonacci",
+      "projectName": "Java-Foundation_631fd9cd"
+    },
+    {
+      "type": "java",
+      "name": "Overloading",
+      "request": "launch",
+      "mainClass": "foundation.Overloading",
+      "projectName": "Java-Foundation_631fd9cd"
+    },
+    {
+      "type": "java",
+      "name": "Switch",
+      "request": "launch",
+      "mainClass": "foundation.Switch",
+      "projectName": "Java-Foundation_631fd9cd"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "BinaryGap",
+      "request": "launch",
+      "mainClass": "algorithm.BinaryGap",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "BitMapping",
+      "request": "launch",
+      "mainClass": "algorithm.BitMapping",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "BitMapping$PrintSum",
+      "request": "launch",
+      "mainClass": "algorithm.BitMapping$PrintSum",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "IsArmstrong",
+      "request": "launch",
+      "mainClass": "algorithm.IsArmstrong",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "IsArmstrong$Calculator",
+      "request": "launch",
+      "mainClass": "algorithm.IsArmstrong$Calculator",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "Questions",
+      "request": "launch",
+      "mainClass": "algorithm.Questions",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "Reverse",
+      "request": "launch",
+      "mainClass": "algorithm.Reverse",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "TwoSum",
+      "request": "launch",
+      "mainClass": "algorithm.TwoSum",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "ArrayMax",
+      "request": "launch",
+      "mainClass": "datastructure.ArrayMax",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "MultiDimensionArrayList",
+      "request": "launch",
+      "mainClass": "datastructure.MultiDimensionArrayList",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "MyArray",
+      "request": "launch",
+      "mainClass": "datastructure.MyArray",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "MyArrayList",
+      "request": "launch",
+      "mainClass": "datastructure.MyArrayList",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "MyDynamicArray",
+      "request": "launch",
+      "mainClass": "datastructure.MyDynamicArray",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "MyLinkList",
+      "request": "launch",
+      "mainClass": "datastructure.MyLinkList",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "MyPriorityQueue",
+      "request": "launch",
+      "mainClass": "datastructure.MyPriorityQueue",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "MyQueue",
+      "request": "launch",
+      "mainClass": "datastructure.MyQueue",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "MyStack",
+      "request": "launch",
+      "mainClass": "datastructure.MyStack",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "Swap",
+      "request": "launch",
+      "mainClass": "datastructure.Swap",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "Basic",
+      "request": "launch",
+      "mainClass": "foundation.Basic",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "CaseCheck",
+      "request": "launch",
+      "mainClass": "foundation.CaseCheck",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "Conditions",
+      "request": "launch",
+      "mainClass": "foundation.Conditions",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "CountNums",
+      "request": "launch",
+      "mainClass": "foundation.CountNums",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "Fibonacci",
+      "request": "launch",
+      "mainClass": "foundation.Fibonacci",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "FindLargest",
+      "request": "launch",
+      "mainClass": "foundation.FindLargest",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "NestedSwitch",
+      "request": "launch",
+      "mainClass": "foundation.NestedSwitch",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "Overloading",
+      "request": "launch",
+      "mainClass": "foundation.Overloading",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "Shadowing",
+      "request": "launch",
+      "mainClass": "foundation.Shadowing",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "Switch",
+      "request": "launch",
+      "mainClass": "foundation.Switch",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "VariableArgs",
+      "request": "launch",
+      "mainClass": "foundation.VariableArgs",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "Cookie",
+      "request": "launch",
+      "mainClass": "misc.Cookie",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "Dbj2Hash",
+      "request": "launch",
+      "mainClass": "misc.Dbj2Hash",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "Fib",
+      "request": "launch",
+      "mainClass": "misc.Fib",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "LinkedList",
+      "request": "launch",
+      "mainClass": "misc.LinkedList",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "Pointing",
+      "request": "launch",
+      "mainClass": "misc.Pointing",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "type": "java",
+      "name": "linearSearch",
+      "request": "launch",
+      "mainClass": "misc.linearSearch",
+      "projectName": "Java-Foundation_824d64eb"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "d:/Github/Java-Foundation",
+      "program": "d:/Github/Java-Foundation/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
 }
