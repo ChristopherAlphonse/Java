@@ -141,6 +141,42 @@ public class DLinkedList {
 
     }
 
+    public Node remove(int index) {
+        if (index < 0 || index >= length)
+            return null;
+        Node temp = head;
+
+        /* remove first index */
+        if (index == 0) {
+            head = temp.next;
+            if (head != null)
+                head.prev = null;
+            temp.next = null;
+            /* remove last index */
+        } else if (index == length - 1) {
+            temp = tail;
+            tail = tail.prev;
+            if (tail != null)
+                tail.next = null;
+            temp.prev = null;
+        } else if (index < length / 2) {
+            for (int i = 0; i < index; i++) {
+                temp = temp.next;
+            }
+            temp.prev.next = temp.next;
+            temp.next.prev = temp.prev;
+        } else {
+            temp = tail;
+            for (int i = length - 1; i > index; i--) {
+                temp = temp.prev;
+            }
+            temp.prev.next = temp.next;
+            temp.next.prev = temp.prev;
+        }
+        length--;
+        return temp;
+    }
+
     public static void main(String[] args) {
         DLinkedList list = new DLinkedList(0);
 
