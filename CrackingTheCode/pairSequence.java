@@ -2,13 +2,14 @@ package CrackingTheCode;
 
 public class pairSequence {
 
+    int min = Integer.MIN_VALUE;
+    int max = Integer.MAX_VALUE;
+
     public static int pairSumSequence(int n) {
         int sum = 0;
-
         for (int i = 0; i < n; i++) {
             sum += pairSum(i, i + 1);
         }
-
         return sum;
     }
 

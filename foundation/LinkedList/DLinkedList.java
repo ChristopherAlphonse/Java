@@ -33,18 +33,6 @@ public class DLinkedList {
         }
     }
 
-    public void getHead() {
-        System.out.println(head.value);
-    }
-
-    public void getTail() {
-        System.out.println(tail.value);
-    }
-
-    public void getLength() {
-        System.out.println("L : " + length);
-    }
-
     public void append(int data) {
         Node newNodeObj = new Node(data);
         if (length == 0) {
@@ -79,11 +67,39 @@ public class DLinkedList {
         return temp;
     }
 
+    public Node get(int index) {
+        if (index < 0 || index >= length)
+            return null;
+
+        Node temp = head;
+        if (index < length / 2) {
+            for (int i = 0; i < index; i++) {
+                temp = temp.next;
+            }
+        } else {
+            temp = tail;
+            for (int i = length - 1; i > index; i--) {
+                temp = temp.prev;
+            }
+        }
+        return temp;
+    }
+
+    public boolean set(int index, int value) {
+
+        Node temp = get(index);
+        if (temp != null) {
+            temp.value = value;
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         DLinkedList list = new DLinkedList(0);
 
         list.append(3);
         list.append(4);
+        list.set(0, 99);
         list.printList();
     }
 }

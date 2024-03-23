@@ -2,13 +2,6 @@ package algorithm;
 
 public class BinaryGap {
 
-
-    public static void main(String[] args) {
-        BinaryGap bg = new BinaryGap();
-        int result = bg.solution(9);
-        System.out.println(result);
-    }
-
     public int solution(int n) {
         String binaryString = Integer.toBinaryString(n);
 
@@ -36,5 +29,11 @@ public class BinaryGap {
 
         return maxCount;
 
+    }
+
+    public static void main(String[] args) {
+        BinaryGap bg = new BinaryGap();
+        int result = bg.solution(9);
+        System.out.println(result);
     }
 }
