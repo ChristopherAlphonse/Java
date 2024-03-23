@@ -33,7 +33,7 @@ public class DLinkedList {
         }
     }
 
-    public void append(int data) {
+    private void append(int data) {
         Node newNodeObj = new Node(data);
         if (length == 0) {
             head = newNodeObj;
@@ -94,12 +94,60 @@ public class DLinkedList {
         return false;
     }
 
+    public Node insert(int pos, int value) {
+        if (pos < 0 || pos > length) {
+            return null;
+        }
+        Node newNode = new Node(value);
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+            // if null make first node
+        } else if (pos == 0) {
+            newNode.next = head;
+            newNode.prev = newNode;
+            head = newNode;
+            // if at the first node 0(1)
+        } else if (pos == length) {
+            tail.next = newNode;
+            newNode.prev = tail;
+            tail = newNode;
+            // if at the tail 0(1)
+        } else {
+            Node current;
+            if (pos < length / 2) {
+                current = head;
+                for (int i = 0; i < pos; i++) {
+                    current = current.next;
+                }
+            }
+            // if exist in the first half
+            else {
+                current = tail;
+                for (int i = length - 1; i > pos; i--) {
+                    current = current.prev;
+                }
+            }
+
+            newNode.next = current.next;
+            newNode.prev = current;
+            current.next.prev = newNode;
+            current.prev = newNode;
+            // make new node join , officially a member of the club
+        }
+
+        length++;
+        return newNode;
+
+    }
+
     public static void main(String[] args) {
         DLinkedList list = new DLinkedList(0);
 
         list.append(3);
         list.append(4);
-        list.set(0, 99);
+        list.insert(0, 99);
+
         list.printList();
     }
 }
