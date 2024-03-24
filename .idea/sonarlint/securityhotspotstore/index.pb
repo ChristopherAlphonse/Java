@@ -1,3 +1,5 @@
 
-\
-,leetcode/Array/containsDups/containsDup.java,a\8\a86b12687b54cce8afcaeacc5db6447804d106d2
+H
+misc/SearchInString.java,7\7\7779bb1b1ecda1ea70a8ae763806c18c5ef43321
+Q
+!foundation/Array/StaticArray.java,6\b\6bf5a13af3bf6da96eba3d5097a14c29d14478a9
