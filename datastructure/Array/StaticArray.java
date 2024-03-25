@@ -1,4 +1,4 @@
-package foundation.Array;
+package datastructure.Array;
 
 public public class StaticArray {
 

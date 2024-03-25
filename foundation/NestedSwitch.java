@@ -10,7 +10,6 @@ public class NestedSwitch {
     public static void main(String[] args) {
         Scanner userIn = new Scanner(System.in);
 
-
         System.out.print("Enter Identification Number: ");
         int userID = userIn.nextInt();
         userIn.nextLine();
@@ -32,6 +31,5 @@ public class NestedSwitch {
 
         userIn.close();
     }
-
 
 }

@@ -3,6 +3,20 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "Stack",
+			"request": "launch",
+			"mainClass": "datastructure.Stack.Stack",
+			"projectName": "Java-Foundation_824d64eb"
+		},
+		{
+			"type": "java",
+			"name": "Stack$Node$Stack",
+			"request": "launch",
+			"mainClass": "datastructure.Stack.Stack$Node$Stack",
+			"projectName": "Java-Foundation_824d64eb"
+		},
+		{
+			"type": "java",
 			"name": "SearchInString",
 			"request": "launch",
 			"mainClass": "misc.SearchInString",

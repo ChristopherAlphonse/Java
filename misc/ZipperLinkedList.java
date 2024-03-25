@@ -1,6 +1,6 @@
 package misc;
 
-import foundation.LinkedList.LinkedList.Node;
+import datastructure.LinkedList.LinkedList.Node;
 
 public class ZipperLinkedList {
 

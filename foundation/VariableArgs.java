@@ -15,7 +15,6 @@ public class VariableArgs {
     }
 }
 
-
 /*
  * Varargs : similar to spread op in JS, but operate differently
  * 
