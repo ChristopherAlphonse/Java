@@ -3,6 +3,20 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "test",
+			"request": "launch",
+			"mainClass": "CrackingTheCode.test",
+			"projectName": "Java-Foundation_824d64eb"
+		},
+		{
+			"type": "java",
+			"name": "DLinkedList",
+			"request": "launch",
+			"mainClass": "datastructure.LinkedList.DLinkedList",
+			"projectName": "Java-Foundation_824d64eb"
+		},
+		{
+			"type": "java",
 			"name": "Stack",
 			"request": "launch",
 			"mainClass": "datastructure.Stack.Stack",

@@ -22,16 +22,13 @@ public class Stack {
 
 	void push(int value) {
 		Node newNode = new Node(value);
-
 		if (height == 0) {
 			top = newNode;
 		} else {
 			newNode.next = top;
 			top = newNode;
-
 		}
 		height++;
-
 	}
 
 	int pop() {
@@ -57,7 +54,6 @@ public class Stack {
 		myStack.push(20);
 		myStack.push(30);
 		myStack.push(0);
-
 		myStack.printStack();
 	}
 }
