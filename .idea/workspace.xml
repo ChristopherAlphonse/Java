@@ -5,48 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45f21d67-2983-4903-a525-f72c12b2e781" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/7779bb1b1ecda1ea70a8ae763806c18c5ef43321" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/7/7779bb1b1ecda1ea70a8ae763806c18c5ef43321" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java-Foundation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/LinkedList/LinkedList.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/leetcode.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/palindrome/IsPalindromeNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/palindrome/ValidPalindromeString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/SearchInString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a86b12687b54cce8afcaeacc5db6447804d106d2" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrackingTheCode/f.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrackingTheCode/foo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6bf5a13af3bf6da96eba3d5097a14c29d14478a9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/7779bb1b1ecda1ea70a8ae763806c18c5ef43321" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/7779bb1b1ecda1ea70a8ae763806c18c5ef43321" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/8/a86b12687b54cce8afcaeacc5db6447804d106d2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/b/6bf5a13af3bf6da96eba3d5097a14c29d14478a9" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Github/.idea/saveactions_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Github/.idea/sonarlint/issuestore/2/8/2873e619f0897f22f64c38d96aab8bf0e895e4cf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Github/.idea/sonarlint/issuestore/3/0/30c4bf748bec36481d205e87a3faa3a176ed458d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Github/.idea/sonarlint/issuestore/7/1/71d8d68a123bf8b772650716c2c44d10106fb2ec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Github/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Github/.idea/sonarlint/issuestore/d/d/dddd16904a9c67b4e88af72518f0a19e5877b07f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Github/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Github/.idea/sonarlint/securityhotspotstore/2/8/2873e619f0897f22f64c38d96aab8bf0e895e4cf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Github/.idea/sonarlint/securityhotspotstore/3/0/30c4bf748bec36481d205e87a3faa3a176ed458d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Github/.idea/sonarlint/securityhotspotstore/7/1/71d8d68a123bf8b772650716c2c44d10106fb2ec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Github/.idea/sonarlint/securityhotspotstore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Github/.idea/sonarlint/securityhotspotstore/d/d/dddd16904a9c67b4e88af72518f0a19e5877b07f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Github/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Github/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/palindrome/IsPalindromeNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/palindrome/ValidPalindromeString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructure/Queue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/datastructure/Queue/Queue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2e64CfFYxcrXJqhzNEt3ZYpHkOa" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -64,6 +41,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Public/Downloads",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -109,6 +87,8 @@
       <option name="presentableId" value="Default" />
       <updated>1711211568356</updated>
       <workItem from="1711211569938" duration="1257000" />
+      <workItem from="1711762639561" duration="330000" />
+      <workItem from="1711763136284" duration="34000" />
     </task>
     <servers />
   </component>
