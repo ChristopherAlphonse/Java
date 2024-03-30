@@ -31,14 +31,16 @@ public class Stack {
 		height++;
 	}
 
-	int pop() {
-		if (top == null) {
-			throw new IllegalStateException("Stack is empty");
-		}
-		int value = top.value;
+	public Node pop() {
+		if (height == 0)
+			return null;
+
+		Node temp = top;
 		top = top.next;
+		temp.next = null;
+
 		height--;
-		return value;
+		return temp;
 	}
 
 	void printStack() {

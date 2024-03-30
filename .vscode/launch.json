@@ -3,6 +3,20 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "Reverse",
+			"request": "launch",
+			"mainClass": "datastructure.Reverse",
+			"projectName": "Java-Foundation_824d64eb"
+		},
+		{
+			"type": "java",
+			"name": "UnionFind",
+			"request": "launch",
+			"mainClass": "algorithm.UnionFind",
+			"projectName": "Java-Foundation_824d64eb"
+		},
+		{
+			"type": "java",
 			"name": "BinarySearch",
 			"request": "launch",
 			"mainClass": "misc.BinarySearch",

@@ -4,20 +4,18 @@ import java.util.Stack;
 
 public class MyStack {
 
-    public static void main(String[] args) {
-        Stack<String> stack = new Stack<>();
+	public static void main(String[] args) {
+		Stack<String> animalStack = new Stack<>();
 
-        stack.push("dog");
-        stack.push("cat");
-        stack.push("horse");
-        stack.push("snake");
+		animalStack.push("horse");
+		animalStack.push("snake");
+		animalStack.push("cat");
+		animalStack.push("goose");
 
-        Object searchStack = stack.search("dog");
+		String n = animalStack.pop();
 
-        System.out.println(stack.size());
-        System.out.println(searchStack);
-
-    }
+		System.out.println(n);
+	}
 }
 
 // Stack: A Last-In-First-Out (LIFO) Data Structure
