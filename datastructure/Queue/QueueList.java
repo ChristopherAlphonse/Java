@@ -1,6 +1,6 @@
 package datastructure.Queue;
 
-public class Queue {
+public class QueueList {
 
 	private Node first;
 	private Node last;
@@ -15,7 +15,7 @@ public class Queue {
 		}
 	}
 
-	public Queue(int value) {
+	public QueueList(int value) {
 		Node newNode = new Node(value);
 		first = newNode;
 		last = newNode;

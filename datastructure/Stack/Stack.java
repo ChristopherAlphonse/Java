@@ -1,61 +1,44 @@
 package datastructure.Stack;
 
-public class Stack {
+import java.util.ArrayList;
+import java.util.List;
 
-	private Node top;
-	private int height;
+public class Stack<T> {
+	private List<T> list;
 
-	class Node {
-		int value;
-		Node next;
-
-		Node(int value) {
-			this.value = value;
-		}
+	public Stack() {
+		list = new ArrayList<>();
 	}
 
-	public Stack(int value) {
-		Node newNode = new Node(value);
-		top = newNode;
-		height = 1;
+	public void push(T element) {
+		list.add(element);
 	}
 
-	void push(int value) {
-		Node newNode = new Node(value);
-		if (height == 0) {
-			top = newNode;
-		} else {
-			newNode.next = top;
-			top = newNode;
-		}
-		height++;
-	}
-
-	public Node pop() {
-		if (height == 0)
+	public T pop() {
+		if (list.isEmpty()) {
 			return null;
-
-		Node temp = top;
-		top = top.next;
-		temp.next = null;
-
-		height--;
-		return temp;
+		}
+		return list.remove(list.size() - 1);
 	}
 
-	void printStack() {
-		Node temp = top;
-		while (temp != null) {
-			System.out.println(temp.value);
-			temp = temp.next;
-		}
+	boolean isEmpty() {
+		return list.isEmpty();
+	}
+
+	int size() {
+		return list.size();
 	}
 
 	public static void main(String[] args) {
-		Stack myStack = new Stack(10);
-		myStack.push(20);
-		myStack.push(30);
-		myStack.push(0);
-		myStack.printStack();
+		Stack<Integer> stack = new Stack<>();
+		for (int i = 1; i <= 3; i++) {
+			stack.push(i);
+		}
+
+		while (!stack.isEmpty()) {
+			System.out.println(stack.pop());
+		}
+
 	}
+
 }
