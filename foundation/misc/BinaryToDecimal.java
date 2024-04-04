@@ -1,4 +1,4 @@
-package misc;
+package foundation.misc;
 
 import datastructure.LinkedList.LinkedList.Node;
 

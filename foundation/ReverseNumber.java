@@ -1,4 +1,4 @@
-package algorithm;
+package foundation;
 
 public class ReverseNumber {
 

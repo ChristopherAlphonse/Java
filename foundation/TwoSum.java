@@ -1,4 +1,4 @@
-package algorithm;
+package foundation;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,7 +8,6 @@ import java.util.logging.Logger;
 public class TwoSum {
     private static final Logger logger = Logger.getLogger(TwoSum.class.getName());
 
-
     public static void main(String[] args) {
         TwoSum twoSumObj = new TwoSum();
 
@@ -17,11 +16,9 @@ public class TwoSum {
 
         int[] result = twoSumObj.solution(nums, target);
 
-
         logger.log(Level.INFO, () -> "Indices of the two numbers: " + result[0] + ", " + result[1]);
 
     }
-
 
     public int[] solution(int[] nums, int target) {
         Map<Integer, Integer> numMap = new HashMap<>();

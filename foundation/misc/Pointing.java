@@ -1,4 +1,4 @@
-package misc;
+package foundation.misc;
 
 import java.util.HashMap;
 import java.util.logging.Level;

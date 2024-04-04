@@ -1,9 +1,8 @@
-package algorithm;
+package foundation;
 
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 
 public class Questions {
     static final Logger logger = Logger.getLogger(Questions.class.getName());
@@ -43,6 +42,5 @@ public class Questions {
         }
         return true;
     }
-
 
 }
