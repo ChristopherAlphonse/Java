@@ -1,21 +1,21 @@
 package leetcode;
 
 class LengthOfLastWord {
-    public int lengthOfLastWord(String s) {
-        int count = 0;
+	public int lengthOfLastWord(String s) {
+		int count = 0;
 
-        for (int i = s.length() - 1; i >= 0; i--) {
-            char c = s.charAt(i);
-            if (c == ' ') {
-                if (count > 0)
-                    return count;
+		for (int i = s.length() - 1; i >= 0; i--) {
+			char c = s.charAt(i);
+			if (c == ' ') {
+				if (count > 0)
+					return count;
 
-            } else {
-                count++;
-            }
+			} else {
+				count++;
+			}
 
-        }
-        return count;
+		}
+		return count;
 
-    }
+	}
 }
