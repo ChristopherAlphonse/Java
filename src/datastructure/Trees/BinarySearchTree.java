@@ -69,6 +69,10 @@ public class BinarySearchTree {
 		return false;
 	}
 
+
+	/*
+	 * printPath credit to: https://stackoverflow.com/questions/25022410/binary-search-tree-print-path
+	 */
 	public List<Integer> printPath(int value) {
 		List<Integer> path = new ArrayList<>();
 		printPath(root, path, value);
@@ -78,10 +82,6 @@ public class BinarySearchTree {
 		}
 		return path;
 	}
-	/*
-	 * printPath credit to:
-	 * https://stackoverflow.com/questions/25022410/binary-search-tree-print-path
-	 */
 
 	private boolean printPath(Node node, List<Integer> path, int value) {
 		if (node == null) {
@@ -105,6 +105,14 @@ public class BinarySearchTree {
 		return false;
 	}
 
+	// DFS
+
+	/*
+	 * Uses of Inorder Traversal: In the case of binary search trees (BST), Inorder traversal gives
+	 * nodes in non-decreasing order. To get nodes of BST in non-increasing order, a variation of
+	 * Inorder traversal where Inorder traversal is reversed can be used. Code implementation of
+	 * Inorder traversal.
+	 */
 	public void inOrder(Node node) {
 		if (node != null) {
 			inOrder(node.left);
@@ -113,11 +121,29 @@ public class BinarySearchTree {
 		}
 	}
 
+	/*
+	 * Postorder traversal is used to delete the tree. Please see the question for the deletion of a
+	 * tree for details. Postorder traversal is also useful to get the postfix expression of an
+	 * expression tree Below is the implementation of the above traversal methods:
+	 */
 	public void postOrder(Node node) {
 		if (node != null) {
-			inOrder(node.left);
-			inOrder(node.right);
+			postOrder(node.left);
+			postOrder(node.right);
 			System.out.print(node.value + " ");
+		}
+	}
+
+	/*
+	 * Uses of Preorder: Preorder traversal is used to create a copy of the tree. Preorder traversal
+	 * is also used to get prefix expressions on an expression tree. Code implementation of Preorder
+	 * traversal:
+	 */
+	public void preOrder(Node node) {
+		if (node != null) {
+			System.out.print(node.value + " ");
+			preOrder(node.left);
+			preOrder(node.right);
 		}
 	}
 
@@ -130,11 +156,11 @@ public class BinarySearchTree {
 			myBinary.insert(arr[i]);
 		}
 
-		// System.out.println(myBinary.contains(82));
-		System.out.println(myBinary.printPath(17));
-		// myBinary.postOrder(myBinary.root);
-
-
-
+		System.out.println("Inorder:");
+		myBinary.inOrder(myBinary.root);
+		System.out.println("\nPreorder:");
+		myBinary.preOrder(myBinary.root);
+		System.out.println("\nPostorder:");
+		myBinary.postOrder(myBinary.root);
 	}
 }
