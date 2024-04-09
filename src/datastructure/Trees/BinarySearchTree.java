@@ -147,6 +147,18 @@ public class BinarySearchTree {
 		}
 	}
 
+	public int sum(Node x) {
+		if (x == null) {
+			return 0;
+		}
+
+		int leftSum = sum(x.left);
+		int rightSum = sum(x.right);
+
+		return leftSum + rightSum + x.value;
+	}// sum of balance tree
+
+
 	public static void main(String[] args) {
 		BinarySearchTree myBinary = new BinarySearchTree();
 
@@ -156,11 +168,14 @@ public class BinarySearchTree {
 			myBinary.insert(arr[i]);
 		}
 
-		System.out.println("Inorder:");
-		myBinary.inOrder(myBinary.root);
-		System.out.println("\nPreorder:");
-		myBinary.preOrder(myBinary.root);
-		System.out.println("\nPostorder:");
-		myBinary.postOrder(myBinary.root);
+		// System.out.println("Inorder:");
+		// myBinary.inOrder(myBinary.root);
+		// System.out.println("\nPreorder:");
+		// myBinary.preOrder(myBinary.root);
+		// System.out.println("\nPostorder:");
+		// myBinary.postOrder(myBinary.root);
+		System.out.println(myBinary.sum(myBinary.root));
+
+
 	}
 }
