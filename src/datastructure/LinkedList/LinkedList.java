@@ -299,18 +299,23 @@ public class LinkedList {
 	}
 
 	/*
-	 * Methods: append, prepend, removeFirst, removeLast, find,peekHead, peekTail, length,
-	 * printList, get, set, insert, remove, reverse,findMiddleNode.
+	 * Methods: append, prepend, removeFirst, removeLast, find,peekHead, peekTail, length, printList,
+	 * get, set, insert, remove, reverse,findMiddleNode.
 	 */
 
 	public static void main(String[] args) {
 		LinkedList myLinkedList = new LinkedList(0);
-		for (int i = 1; i <= 20; i++) {
+		int[] n = {1, 2, 3, 34, 4, 4, 45, 5, 4, 4, 4, 54, 545, 99};
+
+		for (int i : n) {
 			myLinkedList.append(i);
 		}
 
-		Node middleNode = myLinkedList.findMiddleNode(myLinkedList.head);
-		System.out.println(middleNode.data);
+		int myLastPos = n.length  ;
+
+
+		myLinkedList.set(myLastPos, 9);
+		myLinkedList.printList();
 	}
 
 }

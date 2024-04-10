@@ -35,9 +35,13 @@ public class checkPermutation {
 		return true;// abc has no negative value and therefore neither does it poses positive.
 	}
 
+
+
 	public static void main(String[] args) {
 		checkPermutation cp = new checkPermutation();
-		System.out.println(cp.permutation(" abt  ", "bta   "));
+		System.out.println(cp.permutation("enlist", "listen"));
 		// counted spaces in here
 	}
 }
+
+

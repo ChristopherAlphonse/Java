@@ -28,7 +28,7 @@ public class DLinkedList {
 	public void printList() {
 		Node temp = head;
 		while (temp != null) {
-			System.out.println(temp.value);
+			System.out.print("" + temp.value + "|");
 			temp = temp.next;
 		}
 	}
@@ -206,10 +206,18 @@ public class DLinkedList {
 
 	public static void main(String[] args) {
 		DLinkedList list = new DLinkedList(0);
-		list.append(3);
-		list.append(4);
-		list.insert(0, 99);
-		// list.swapFirstLast();
+		int[] n = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+
+		for (int i : n) {
+			list.append(i);
+		}
+		int pos = n.length - 1;
+
+		list.insert(pos, 66); // will need for hashtable
 		list.printList();
+		System.out.println(list.length);
 	}
+
+
 }
