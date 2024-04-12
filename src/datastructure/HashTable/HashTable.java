@@ -1,5 +1,7 @@
 package datastructure.HashTable;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 /*
@@ -58,7 +60,7 @@ public class HashTable {
 		return hash;
 	}
 
-	public void set(String key, int value) {
+	public void put(String key, int value) {
 		int index = hash(key);
 		Node newNode = new Node(key, value);
 		if (dataMap[index] == null) {
@@ -84,29 +86,33 @@ public class HashTable {
 		return 0;
 	}
 
+	public List<String> keys() {
+		ArrayList<String> allkeys = new ArrayList<>();
+		for (int i = 0; i < dataMap.length; i++) {
+			Node temp = dataMap[i];
+			while (temp != null) {
+				allkeys.add(temp.key);
+				temp = temp.next;
+			}
+		}
+		return allkeys;
+	}
+
+
+
 	public static void main(String[] args) {
 
-		HashTable HT = new HashTable();
+		HashTable myHashTable = new HashTable();
+		String[] myArray = {"rock", "jazz", "kite", "drum", "fish", "moon", "palm", "cake", "jump",
+				"frog", "lamp", "bird", "fork", "book", "star", "tree", "milk", "soap", "leaf", "chip"};
+		for (int i = 0; i < myArray.length; i++) {
+			myHashTable.put(myArray[i], i);
+		}
 
-		HT.set("yaml", 100);
-		HT.set("bson", 50);
-		HT.set("json", 80);
-		HT.set("xml", 200);
-		HT.set("html", 140);
-		HT.set("sql", 1);
-		HT.set("react", 7);
+		myHashTable.printTable();
+
+		System.out.println(myHashTable.keys());
 
 
-		System.out.println(HT.get("xml")); // 200
-		HT.printTable();
-		/*
-		 * 0| {bson = 50} -> {sql = 1} 
-		 * 1| 
-		 * 2| {yaml = 100} -> {json = 80} -> {xml = 200} 
-		 * 3| 
-		 * 4| {react = 7} 
-		 * 5| 
-		 * 6| {html = 140}
-		 */
 	}
 }
