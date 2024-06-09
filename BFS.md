@@ -1,0 +1,2 @@
+- Breadth-first search
+  - traverse a graph by starting at a specific vertex and visiting the vertex adjacent vertices before visiting the next vertices. no vertex is revisited.
